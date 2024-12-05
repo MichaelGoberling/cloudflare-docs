@@ -2613,7 +2613,9 @@ wrangler telemetry enable
 
 ### `status`
 
-Check whether telemetry collection is currently enabled. This will resolve the global status set by `wrangler telemetry disable / enable`, the environment variable [`WRANGLER_SEND_METRICS`](/workers/wrangler/system-environment-variables/#supported-environment-variables) and the [`send_metrics`](/workers/wrangler/configuration/#top-level-only-keys) key in `wrangler.toml`.
+Check whether telemetry collection is currently enabled. The return result is specific to the directory where you have run the command.
+
+This will resolve the global status set by `wrangler telemetry disable / enable`, the environment variable [`WRANGLER_SEND_METRICS`](/workers/wrangler/system-environment-variables/#supported-environment-variables), and the [`send_metrics`](/workers/wrangler/configuration/#top-level-only-keys) key in `wrangler.toml`.
 
 ```txt
 wrangler telemetry status
